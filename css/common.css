@@ -8,10 +8,10 @@ body {
 
 body {
     font-family:
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
     font-size: 14px;
     color: #fff;
     margin: 0;
@@ -36,16 +36,16 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-object-fit: cover;
+    object-fit: cover;
 }
 
 
 
-.container{
-    width:1100px;
+.container {
+    width: 1100px;
     height: 100%;
     margin: 0 auto;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
@@ -54,94 +54,95 @@ object-fit: cover;
 
 
 header {
-    width:100%;
-    height:310px;
+    width: 100%;
+    height: 310px;
     margin: 0 auto;
-    background-color:yellow;
+    background-color: yellow;
 }
 
 #header_top {
-    width:100%;
+    width: 100%;
     height: 70px;
     display: flex;
 }
 
-#header_top .left{
-    width:50%;
-    height:100%;
-    background-color:tomato;
+#header_top .left {
+    width: 50%;
+    height: 100%;
+    background-color: tomato;
 }
 
-#header_top .right{
-    width:50%;
-    height:100%;
-    background-color:blue;
-    
+#header_top .right {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+
 }
 
-#header_main{
-    width:100%;
+#header_main {
+    width: 100%;
     height: 240px;
-    margin:0 auto;
-    background-color: #ce7c7c;    
+    margin: 0 auto;
+    background-color: #ce7c7c;
 }
 
-#header_main .top{
-    height:40px;
+#header_main .top {
+    height: 40px;
     border-bottom: 1px solid #ddd;
 }
 
-#header_main .middle{
+#header_main .middle {
     height: 150px;
 }
 
-#header_main .bottom{
-    height:50px;
+#header_main .bottom {
+    height: 50px;
     border-top: 1px solid #ddd;
     border-bottom: 2px solid red;
 }
 
 
-#header_main .left{
-    width:200px;
+#header_main .left {
+    width: 200px;
     height: 40px;
     background-color: #999;
 }
-nav ul{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 8px;
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
 }
 
-#header_main .right{
-    width:300px;
+#header_main .right {
+    width: 300px;
     height: 40px;
-    background-color:#999;
+    background-color: #999;
 }
 
-.logo{
+.logo {
     width: 250px;
     height: 80px;
     background-color: blueviolet;
 }
 
-.search_bar{
-     width: 500px;
+.search_bar {
+    width: 500px;
     height: 40px;
     background-color: blueviolet;
 }
 
-.search_book{
+.search_book {
     width: 200px;
     height: 40px;
     background-color: blueviolet;
 }
 
 
-main{
-    width:1100px;
+main {
+    width: 1100px;
     height: 237px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: aqua;
 }
 
@@ -153,18 +154,139 @@ footer {
     height: 465px;
     background-color: #e4dbdb;
     display: flex;
-    justify-content: center; /* 자식 요소들을 화면 가운데로 모아줍니다 */
+    justify-content: center;
+}
+
+footer .container {
+    display: block;
+}
+
+.footer_top {
+    height: 250px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer_left {
-    width: 250px;
-    height: 240px;
+    width: 360px;
     background-color: deeppink;
 }
 
 .footer_right {
-    width: 250px;
-    height: 80px;
+    width: 550px;
     background-color: rgb(204, 95, 153);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
+.footer_left .phone {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.menu_box {
+    display: flex;
+    flex-direction: column;
+    color: #111;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 210px;
+    padding: 30px 0;
+    margin: 5px auto;
+    background-color: rgb(142, 142, 225);
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+}
+
+.bottom_logo {
+    width: 250px;
+    background-color: aliceblue;
+}
+
+.bottom_center {
+    width: 1000px;
+    height: 150px;
+    background-color: rgb(104, 162, 212);
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.bottom_center ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* 블록 성질을 주어 줄바꿈이 정상 작동하도록 설정 */
+    display: block; 
+    width: 100%;
+}
+
+/* 1. 상단 메뉴와 기업 정보 공통 li 스타일 (기존 float 완전히 제거) */
+.bottom_center li {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.bottom_center li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* 메뉴들 사이 구분선(|) */
+.bottom_center li::after {
+    content: "|";
+    position: absolute;
+    right: -2px;
+    color: #ccc;
+    font-size: 11px;
+}
+
+/* 2. 💡 핵심: (주)영풍문고가 위치한 6번째 li를 확실하게 아래 줄로 내리기 */
+.bottom_center li:nth-child(6) {
+    /* inline-block 성질을 버리고 block으로 만들어 무조건 다음 줄로 줄바꿈 */
+    display: block; 
+    width: 100%;
+    margin-top: 15px; /* 상단 메뉴와의 위쪽 간격 */
+    padding-left: 0;
+}
+
+/* 3. 💡 6번째 이후 가로로 나열될 기업 정보 li 스타일 */
+.bottom_center li.company_info {
+    /* 6번째를 제외한 나머지 기업정보 li들은 다시 부드럽게 가로로 배치 */
+    display: inline-block; 
+}
+
+/* 6번째 첫 시작점은 block 줄바꿈을 유지하도록 재설정 */
+.bottom_center li:nth-child(6).company_info {
+    display: block;
+}
+
+/* 💡 기업 정보 글씨 크기 일괄 축소 */
+.bottom_center li.company_info a {
+    font-size: 11px; 
+    color: #666;
+}
+
+/* 맨 마지막 COPYRIGHT 문장 구분선 없애기 */
+.bottom_center li:last-child::after {
+    content: "";
+}
+
+.bottom_right {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(104, 212, 180);
+}
