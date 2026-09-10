@@ -1,11 +1,11 @@
-  <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        pagination: {
-          el: '.swiper-pagination',
+var swiper = new Swiper('.mySwiper', {
+  navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-      });
-    </script>
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+});

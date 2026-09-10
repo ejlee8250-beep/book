@@ -1,0 +1,35 @@
+
+
+section {
+    width: 100%;
+    padding: 20px;    
+}
+
+section .container{
+    flex-wrap: wrap;
+}
+
+
+section h3 {
+    width: 100%;
+}
+
+.box {
+    width: 18%;
+    /* height: 320px; */
+    text-align: center;
+    /* padding: 15px 30px; */
+    /* border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 4px 4px 4px #eee; */
+}
+
+.box img{
+    width:100%;
+}
+
+.box p {
+    font-size: 11px;
+    color: #666;
+    text-align: left;
+}

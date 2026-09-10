@@ -19,8 +19,8 @@
     <div id="wrap">
         <header>
             <div id="header_top">
-                <div class="left"></div>
-                <div class="right"></div>
+                <div class="left"><img src="./img/배너 이지니.png" alt="왼쪽 배너"></div>
+                <div class="right"><img src="./img/오른쪽 배너.png" alt="오른쪽 배너"></div>
             </div>
 
             <div id="header_main">
@@ -47,42 +47,116 @@
                             </nav>
                         </div>
                     </div>
-
                 </div>
                 <div class="middle">
                     <div class="container">
-                        <div class="logo"></div>
-                        <div class="search_bar"></div>
-                        <div class="search_book"></div>
+                        <div class="logo">
+                            <img src="./img/bf6263dd-acbc-481a-bbe9-ee745440f5ac.png" alt="로고">
+                        </div>
+                        <div class="search_wrap">
+                            <div class="search_bar">
+                                <input type="text" placeholder="구병모 『찰랑』 20만 부 기념 화이트 에디션 출간">
+                                <button type="button" class="search_btn">검색</button>
+                            </div>
+                            <ul class="search_test">
+                                <li><a href="#">창비브랜드전</a></li>
+                                <li><a href="#">하루키 신간</a></li>
+                                <li><a href="#">트렌드코리아</a></li>
+                                <li><a href="#">흔한남매 23</a></li>
+                                <li><a href="#">그리스인조르바</a></li>
+                            </ul>
+                        </div>
+                        <div class="search_book">
+                            <!-- 1. 책 표지 이미지 영역 -->
+                            <div class="book_img">
+                                <!-- 준비하신 이미지 파일 경로를 src에 넣어주세요 -->
+                                <img src="./img/8670fe68-0abb-44e3-afc9-6b6cc39ca23b_512.jpg" alt="서리꽃 책 표지">
+                            </div>
+
+                            <div class="book_info">
+                                <span class="ad_badge">AD</span>
+                                <p class="book_title">서리꽃 1권 / 2권</p>
+                                <p class="book_desc">순수하고 아름다운 문학의 절정</p>
+
+                                <div class="book_arrows">
+                                    <button class="prev_btn">&lt;</button>
+                                    <button class="next_btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="bottom">
                     <div class="container">
+                        <ul class="nav_left">
+                            <li><a href="#">전체 카테고리</a></li>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">추천</a></li>
+                            <li><a href="#">기프티콘</a></li>
+                            <li><a href="#" class="point_red">컬처페이지</a></li>
+                            <li><a href="#" class="point_red">원더리움</a></li>
+                        </ul>
+
+                        <!-- 오른쪽 메뉴들 -->
+                        <ul class="nav_right">
+                            <li><a href="#">신규가입 10,800원</a></li>
+                            <li><a href="#">사은품</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">트렌드 코리아 2027</a></li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
-
-
         </header>
 
         <main>
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+            <div id="slider">
+                <div class="container">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/slider1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slider2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slider3.png" alt="">
+                            </div>
+                        </div>
+                        <!-- 좌우 이동 버튼 -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+
+            <section id="new">
+                <div class="container">
+                    <h3>신간도서</h3>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>  
+                </div>              
+            </section>
+            
+            <section id="sale">
+                <div class="container">
+                    <h3>세일 도서 </h3>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>    
+                </div>            
+            </section>
+
         </main>
 
         <footer>
@@ -91,9 +165,10 @@
                     <div class="footer_left">
                         <h3>고객센터</h3>
                         <div class="phone">1544-9020</div>
-                        <p>상담가능시간 평일 09:00 ~ 18:00 / 점심시간 12:15 ~ 13:15</p>
-                        <p>대표 이메일 customer@ypbooks.co.kr</p>
-                        <p>대량 주문 webmaster@ypbooks.co.kr</p>
+                        <p><strong>상담가능시간</strong> 평일 09:00 ~ 18:00 / 점심시간 12:15 ~ 13:15</p>
+                        <p><strong>대표 이메일</strong> customer@ypbooks.co.kr</p>
+                        <p><strong>대량 주문</strong> webmaster@ypbooks.co.kr</p>
+
 
                         <div class="left_button">
                             <a href="#">FAQ ></a>
@@ -120,7 +195,7 @@
                         </div>
 
                         <div class="menu_box">
-                            <!-- 쇼핑도우이 -->
+                            <!-- 쇼핑도우미 -->
                             <h3>쇼핑도우미</h3>
                             <a href="#">도서관리</a>
                             <a href="#">회원등급 혜택</a>
@@ -142,26 +217,28 @@
                 </div>
                 <div class="bottom">
                     <div class="bottom_logo">
-                        <img src="./img/yp_logo.png" alt="">
+                        <img src="./img/yp_logo.png" alt="로고">
                     </div>
                     <div class="bottom_center">
                         <ul>
-
                             <li><a href="#">이용약관</a></li>
                             <li><a href="#">개인정보처리방침</a></li>
                             <li><a href="#">영상정보관리방침</a></li>
                             <li><a href="#">청소년보호정책</a></li>
                             <li><a href="#">이메일 무단 수집거부</a></li>
-                            <li class="company_info"><a href="#">(주) 영풍문고</a></li>
-                            <li class="company_info"><a href="#">주소서울특별시 강남구 강남대로 542(논현동, 영풍빌딩) (우)06110</a></li>
-                            <li class="company_info"><a href="#">대표이사김경환</a></li>
-                            <li class="company_info"><a href="#">사업자 등록번호773-86-01800 사업자정보확인</a></li>
-                            <li class="company_info"><a href="#">통신판매등록번 2024-서울강남-06241</a></li>
-                            <li class="company_info"><a href="#">개인정보관리 책임자조순제</a></li>
-                            <li><a href="#">COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</a></li>
                         </ul>
+                        <div class="bottom_text">
+                            <ul>
+                                <li>(주) 영풍문고</li>
+                                <li>주소 서울특별시 강남구 강남대로 542(논현동, 영풍빌딩) (우)06110</li>
+                                <li>대표이사 김경환</li>
+                                <li>사업자 등록번호 773-86-01800 <span>사업자정보확인</span></li>
+                                <li>통신판매등록번 2024-서울강남-06241</li>
+                                <li>개인정보관리 책임자 조순제</li>
+                                <li class="sub-text">COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</li>
+                            </ul>
+                        </div>
                     </div>
-
 
                     <div class="bottom_right">
 
@@ -169,10 +246,14 @@
                 </div>
             </div>
         </footer>
-
+        
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
     <script src="./js/swiper.js"></script>
-    <script src="">c</script>
+    <script src="./js/book.js"></script>
 </body>
 
 </html>
